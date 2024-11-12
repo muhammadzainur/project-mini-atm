@@ -1,125 +1,140 @@
 /* Mencegah scroll di halaman */
-body, html {
-       margin: 0;
-       padding: 0;
-       overflow: hidden;
-       font-family: Roboto, sans-serif;
-     }
-     
-     .garis {
-      border: none; /* Menghilangkan border default */
-      height: 1px; /* Tinggi garis */
-      background-color: white; /* Warna garis */
-      margin: 65px 0; /* Margin atas dan bawah */
-  }
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+}
 
-     .main-page-container {
-       position: relative;
-       background-color: #2196f3; /* Latar belakang biru */
-       width: 100vw;
-       height: 100vh;
-       color: #ffffff;
-       box-sizing: border-box;
-       padding: 0; /* Menghilangkan padding utama */
-       overflow: hidden;
-       font-family: Roboto, sans-serif;
-     }
-     
-     .header {
-       position: absolute;
-       top: 20px;
-       left: 200px;
-       font-size: 1.2em;
-     }
+.garis {
+  border: none;
+  /* Menghilangkan border default */
+  height: 1px;
+  /* Tinggi garis */
+  background-color: white;
+  /* Warna garis */
+  margin: 65px 0;
+  /* Margin atas dan bawah */
+}
 
-     .tanggal {
-       position: absolute;
-       top: 20px;
-       right: 200px; /* Tempatkan di pojok kanan atas */
-       font-size: 1.2em;
-     }
-     
-     .bank-name {
-       font-weight: bold;
-     }
-     
-     .content {
-       display: flex;
-       justify-content: center; /* Center child elements horizontally */
-       align-items: center; /* Center child elements vertically */
-       width: 100%;
-       max-width: 800px; /* Set a maximum width */
-       margin: 100px auto 0; /* Center the content with auto margins */
-       padding: 0 20px; /* Optional padding on the sides */
-     }
-     
-     .illustration {
-       flex: 2;
-       display: flex;
-       justify-content: center; /* Center the image horizontally */
-       align-items: center;
-       margin-right: 20px;
-     }
-     
-     .illustration img {
-       width: 500px;
-       height: 450px;
-     }
-     
-     .actions {
-       display: flex;
-       flex-direction: column;
-       gap: 15px;
-       flex: 1;
-     }     
-     
-     .action-button {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       text-align: left;
-       background-color: #ffffff;
-       color: black;
-       border-radius: 10px;
-       padding: 10px 20px;
-       font-size: 1.2em;
-       cursor: pointer;
-       border: none;
-       height: 80px;
-       width: 350px;
-       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-       outline: none;
-     } 
+.main-page-container {
+  position: relative;
+  background-color: #2196f3;
+  /* Latar belakang biru */
+  width: 100vw;
+  height: 100vh;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 0;
+  /* Menghilangkan padding utama */
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+}
 
-     .action-icon {
-       width: 40px; /* Adjust the width of the icons */
-       height: 40px; /* Adjust the height of the icons */
-       margin-right: 10px; /* Add some space between icon and text */
-     }
-     
-     .action-button:focus {
-       outline: none;
-     }
-     
-     .action-button:hover {
-       background-color: #88AAFF;
-       color: #ffffff;
-     }
+.header {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  font-size: 1.2em;
+}
 
-     .action-button:hover {
-       content: url('/project-atm/public/eye-2.png');
-     }
-     
-     .action-button:hover {
-       content: url('/project-atm/public/trans-2.png');
-     }
-     
-     .action-button:hover {
-       content: url('/project-atm/public/money-2.png');
-     }
-     
-     .action-button:hover {
-       content: url('/project-atm/public/tarik-2.png');
-     }
-     
-     
+.tanggal {
+  position: absolute;
+  top: 20px;
+  right: 200px;
+  /* Tempatkan di pojok kanan atas */
+  font-size: 1.2em;
+}
+
+.bank-name {
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  /* Center child elements horizontally */
+  align-items: center;
+  /* Center child elements vertically */
+  width: 100%;
+  max-width: 800px;
+  /* Set a maximum width */
+  margin: 100px auto 0;
+  /* Center the content with auto margins */
+  padding: 0 20px;
+  /* Optional padding on the sides */
+}
+
+.illustration {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  /* Center the image horizontally */
+  align-items: center;
+  margin-right: 20px;
+}
+
+.illustration img {
+  width: 500px;
+  height: 450px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.action-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  height: 80px;
+  width: 350px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.action-icon {
+  width: 40px;
+  /* Adjust the width of the icons */
+  height: 40px;
+  /* Adjust the height of the icons */
+  margin-right: 10px;
+  /* Add some space between icon and text */
+}
+
+.action-button:focus {
+  outline: none;
+}
+
+.action-button:hover {
+  background-color: #88AAFF;
+  color: #ffffff;
+}
+
+.action-button:hover {
+  content: url('/project-atm/public/eye-2.png');
+}
+
+.action-button:hover {
+  content: url('/project-atm/public/trans-2.png');
+}
+
+.action-button:hover {
+  content: url('/project-atm/public/money-2.png');
+}
+
+.action-button:hover {
+  content: url('/project-atm/public/tarik-2.png');
+}
