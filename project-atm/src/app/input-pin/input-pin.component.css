@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 0 50px 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: #000;
+}
+
+.date {
+  color: #DEDEDE8C;
+}
+
+.content {
+  position: absolute;
+  top: 260px;
+  left: 50px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+
+.pin-input {
+  width: 300px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.buttons {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-container .label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn i {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.btn-cancel {
+  background-color: #ff3333;
+}
+
+.btn-clear {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.btn-enter {
+  background-color: #33cc33;
+}

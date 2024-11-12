@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bank Interface</title>
-    <link rel="stylesheet" href="main-page.component.css" />
-  </head>
-  <body>
-    <div class="main-page-container">
-      <nav class="garis">
-        <div class="header">
-          <span class="bank-name">(NAMA BANK)</span>
-        </div>
-        <div class="tanggal">
-          <span class="date">Rabu 23 Oktober</span>
-        </div>
-      </nav>
-      <div class="content">
-        <div class="illustration">
-          <img src="woman-in-atm.png" alt="ATM Illustration" />
-        </div>
-        <div class="actions">
-          <button class="action-button eye">
-                 <span>Cek saldo</span>
-                 <img src="eye-2.png" alt="Cek saldo" class="action-icon" />
-              </button>
-          <button class="action-button">
-                 <span>Transfer</span>
-            <img src="trans-2.png" alt="Transfer" class="action-icon" />
-          </button>
-          <button class="action-button">
-                 <span>Setor Tunai</span>
-            <img src="money-2.png" alt="Setor Tunai" class="action-icon" />
-          </button>
-          <button class="action-button">
-                 <span>Tarik Tunai</span>
-            <img src="tarik-2.png" alt="Tarik Tunai" class="action-icon" />
-          </button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank Interface</title>
+  <link rel="stylesheet" href="main-page.component.css" />
+</head>
+
+<body>
+  <div class="main-page-container">
+    <nav class="garis">
+      <div class="header">
+        <span class="bank-name">(NAMA BANK)</span>
+      </div>
+      <div class="tanggal">
+        <span class="date">Rabu 23 Oktober</span>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="illustration">
+        <img src="woman-in-atm.png" alt="ATM Illustration" />
+      </div>
+      <div class="actions">
+        <button class="action-button eye" [routerLink]="['/cek-saldo']">
+          <span>Cek saldo</span>
+          <img src="eye-2.png" alt="Cek saldo" class="action-icon" />
+        </button>
+        <button class="action-button">
+          <span>Transfer</span>
+          <img src="trans-2.png" alt="Transfer" class="action-icon" />
+        </button>
+        <button class="action-button">
+          <span>Setor Tunai</span>
+          <img src="money-2.png" alt="Setor Tunai" class="action-icon" />
+        </button>
+        <button class="action-button">
+          <span>Tarik Tunai</span>
+          <img src="tarik-2.png" alt="Tarik Tunai" class="action-icon" />
+        </button>
+        <button class="action-button" [routerLink]="['/keluar']">
+          <span>Keluar</span>
+          <img src="keluar-2.png" alt="Keluar" class="action-icon" />
+        </button>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
