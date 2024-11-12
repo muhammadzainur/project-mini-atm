@@ -37,6 +37,7 @@ body, html {
        top: 20px;
        right: 200px; /* Tempatkan di pojok kanan atas */
        font-size: 1.2em;
+       opacity: 0.5;
      }
      
      .bank-name {

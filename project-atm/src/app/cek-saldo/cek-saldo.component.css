@@ -1,0 +1,105 @@
+/* Reset default margin and padding */
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   
+   /* General styles */
+   .main-cek-saldo {
+       position: relative;
+       background-color: #2196f3; /* Latar belakang biru */
+       width: 100vw;
+       height: 100vh;
+       color: #ffffff;
+       font-family: Roboto, sans-serif;
+       padding: 0; /* Menghilangkan padding utama */
+       overflow: hidden;
+   }
+   
+   /* Navbar styles */
+   .navbar {
+       width: 100%;
+       border-bottom: 1px solid #fff; /* Adds a black line under the navbar */
+       display: flex;
+       justify-content: space-between; /* Aligns items to the left and right */
+       position: absolute; /* Ensures navbar stays at the top */
+       margin: 60px 0px;
+   }
+   
+   /* Container styles */
+   .container {
+       text-align: center;
+       color: white;
+       width: 100%;
+       position: relative;
+       padding: 40px; /* Adjust padding for spacing */
+       top: 50%; /* Centers content vertically */
+       transform: translateY(-50%);
+   }
+   
+   /* Header styles */
+   .bank-name {
+       position: absolute;
+       left: 100px;
+       bottom: 20px;
+       font-size: 1.2em;
+   }
+   
+   .date {
+       position: absolute;
+       right: 100px;
+       bottom: 20px;
+       font-size: 1.2em;
+       opacity: 0.5;
+   }
+   
+   /* Main section styles */
+   main h1 {
+       font-size: 60px;
+       margin-bottom: 100px;
+       margin-top: 100px;  /* Move the h1 upwards */
+   }
+   
+   .balance {
+       text-align: center;
+       font-size: 32px;
+       font-weight: bold;
+       margin-bottom: 100px;
+   }
+   
+   /* Button styles */
+   .button {
+       text-align: center;
+       width: 150%; /* Make the button smaller by reducing the width */
+       max-width: 1000px; /* Optional: Set a max width to prevent it from growing too large */
+       padding: 12px; 
+       border: none;
+       border-radius: 8px;
+       font-size: 18px;
+       margin: 10px 125px; /* Centers the button horizontally */
+       cursor: pointer;
+       display: block;
+       position: relative;
+   }
+   
+   
+   /* Continue button style */
+   .continue {
+       background-color: #00c853;
+       color: white;
+   }
+   
+   /* Exit button style */
+   .exit {
+       background-color: #757575;
+       color: white;
+   }
+   
+   /* Ensure button positioning stays within container */
+   .container .button {
+       position: relative;
+       bottom: 20px; /* Distance from the bottom of the container */
+       left: 20px; /* Distance from the left of the container */
+   }
+   
