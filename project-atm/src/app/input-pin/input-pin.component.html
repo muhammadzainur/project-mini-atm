@@ -3,6 +3,11 @@
 
 <head>
   <link rel="stylesheet" href="input-pin.component.css">
+  <script>
+    function clearInput() {
+      document.querySelector('.pin-input').value = '';
+    }
+  </script>
 </head>
 
 <body>
@@ -14,19 +19,19 @@
   <div class="content">
     <h1>Masukan PIN Anda</h1>
     <div class="subtitle">minimal 6 digit</div>
-    <input type="password" class="pin-input" maxlength="6">
+    <input type="password" class="pin-input" maxlength="6" [(ngModel)]="pin">
   </div>
 
   <div class="buttons">
     <div class="button-container">
-      <span>CANCEl</span>
+      <span>CANCEL</span>
       <button class="btn btn-cancel">
         <i class="fas fa-times"></i>
       </button>
     </div>
     <div class="button-container">
       <span>CLEAR</span>
-      <button class="btn btn-clear">
+      <button class="btn btn-clear" (click)="clearInput()">
         <i class="fas fa-redo"></i>
       </button>
     </div>
