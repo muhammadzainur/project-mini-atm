@@ -1,0 +1,56 @@
+/* Tampilan Halaman Utama */
+.thank-you-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Header bar */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  color: white;
+}
+
+.bank-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 1rem;
+}
+
+/* Konten Terima Kasih */
+.thank-you-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+  /* Supaya posisinya lebih ke tengah */
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 0;
+}

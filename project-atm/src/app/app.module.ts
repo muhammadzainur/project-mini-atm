@@ -10,7 +10,9 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { InputPinComponent } from './input-pin/input-pin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CekSaldoComponent } from './cek-saldo/cek-saldo.component';
+import { TarikTunaiComponent } from './tarik-tunai/tarik-tunai.component';
 import { FormsModule } from '@angular/forms';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,9 @@ import { FormsModule } from '@angular/forms';
     InputPinComponent,
     DashboardComponent,
     CekSaldoComponent,
+    TarikTunaiComponent,
+    CekSaldoComponent,
+    ThankYouComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideClientHydration()],

@@ -1,0 +1,105 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 460px;
+    color: white;
+    margin-right: 600px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.bank-name {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    font-size: 1.2em;
+}
+
+.date {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    /* Tempatkan di pojok kanan atas */
+    font-size: 1.2em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.amount-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+    height: 60px;
+}
+
+.amount-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.amount-button {
+    padding: 15px;
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.amount-button:hover {
+    background-color: #ccc;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.action-button {
+    width: 48%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tarik-tunai {
+    background-color: #00c853;
+    color: white;
+}
+
+.menu-lainnya {
+    background-color: #757575;
+    color: white;
+}

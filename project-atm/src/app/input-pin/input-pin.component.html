@@ -3,11 +3,6 @@
 
 <head>
   <link rel="stylesheet" href="input-pin.component.css">
-  <script>
-    function clearInput() {
-      document.querySelector('.pin-input').value = '';
-    }
-  </script>
 </head>
 
 <body>
@@ -19,13 +14,14 @@
   <div class="content">
     <h1>Masukan PIN Anda</h1>
     <div class="subtitle">minimal 6 digit</div>
-    <input type="password" class="pin-input" maxlength="6" [(ngModel)]="pin">
+    <input type="text" class="pin-input" [value]="maskedPassword" (input)="onInput($event)" pattern="[0-9]*"
+      inputmode="numeric" maxlength="6">
   </div>
 
-  <div class="buttons">
+  <div class=" buttons">
     <div class="button-container">
       <span>CANCEL</span>
-      <button class="btn btn-cancel">
+      <button class="btn btn-cancel" [routerLink]="['/cancel']">
         <i class="fas fa-times"></i>
       </button>
     </div>
@@ -37,7 +33,7 @@
     </div>
     <div class="button-container">
       <span>ENTER</span>
-      <button class="btn btn-enter">
+      <button class="btn btn-enter" [routerLink]="['/main-page']">
         <i class="fas fa-check"></i>
       </button>
     </div>

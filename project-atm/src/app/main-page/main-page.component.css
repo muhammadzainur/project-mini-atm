@@ -45,6 +45,7 @@ html {
   right: 200px;
   /* Tempatkan di pojok kanan atas */
   font-size: 1.2em;
+  opacity: 0.5;
 }
 
 .bank-name {
@@ -60,7 +61,7 @@ html {
   width: 100%;
   max-width: 800px;
   /* Set a maximum width */
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   /* Center the content with auto margins */
   padding: 0 20px;
   /* Optional padding on the sides */
@@ -137,4 +138,62 @@ html {
 
 .action-button:hover {
   content: url('/project-atm/public/tarik-2.png');
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup-message {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.popup-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-red {
+  background: #e63946;
+  color: white;
+}
+
+.button-white {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.button:hover {
+  opacity: 0.9;
 }
