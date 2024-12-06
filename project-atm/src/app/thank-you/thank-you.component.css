@@ -1,4 +1,7 @@
-/* Tampilan Halaman Utama */
+* {
+  font-family: 'poppins';
+}
+
 .thank-you-page {
   display: flex;
   flex-direction: column;
@@ -12,25 +15,32 @@
 
 /* Header bar */
 .header-bar {
+  width: 100%;
+  border-bottom: 1px solid #fff;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 20px;
-  color: white;
+  position: absolute;
+  top: 0;
+  padding: 20px 50px 15px;
 }
 
 .bank-name {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000;
 }
 
 .date {
-  font-size: 1rem;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #DEDEDE8C;
 }
 
 /* Konten Terima Kasih */
 .thank-you-content {
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,4 +63,6 @@ h1 {
 p {
   font-size: 1rem;
   margin-top: 0;
+  color: #D5D5D5;
+
 }

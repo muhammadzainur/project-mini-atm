@@ -1,15 +1,11 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 'poppins';
 }
 
-/* Main container */
 .main-cek-saldo {
   position: relative;
-  background-color: #2196f3;
-  /* Latar belakang biru */
   width: 100vw;
   height: 100vh;
   color: #ffffff;
@@ -20,7 +16,6 @@
   overflow: hidden;
 }
 
-/* Navbar styles */
 .navbar {
   width: 100%;
   border-bottom: 1px solid #fff;
@@ -28,24 +23,22 @@
   justify-content: space-between;
   position: absolute;
   top: 0;
-  padding: 20px;
+  padding: 20px 100px 15px;
 }
 
-/* Center container */
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2196f3;
   color: #fff;
   padding: 20px;
   border-radius: 8px;
 }
 
-/* Header styles */
 .bank-name {
   font-size: 1.2rem;
+  color: #000;
 }
 
 .date {
@@ -53,57 +46,113 @@
   opacity: 0.7;
 }
 
-/* Main section styles */
 main h1 {
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 100px;
   margin-top: 100px;
-  /* Move the h1 upwards */
+  font-weight: 400;
 }
 
 .balance {
   text-align: center;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 100px;
 }
 
-/* Button styles */
 .button {
   text-align: center;
   width: 150%;
-  /* Make the button smaller by reducing the width */
-  max-width: 1000px;
-  /* Optional: Set a max width to prevent it from growing too large */
   padding: 12px;
   border: none;
   border-radius: 8px;
   font-size: 18px;
   margin: 10px 125px;
-  /* Centers the button horizontally */
   cursor: pointer;
   display: block;
   position: relative;
 }
 
-
-/* Continue button style */
 .continue {
   background-color: #00c853;
   color: white;
 }
 
-/* Exit button style */
 .exit {
   background-color: #757575;
   color: white;
 }
 
-/* Ensure button positioning stays within container */
 .container .button {
   position: relative;
   bottom: 20px;
-  /* Distance from the bottom of the container */
   left: 20px;
-  /* Distance from the left of the container */
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-message {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 56px;
+}
+
+.popup-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.button-red {
+  width: 100%;
+  background: #e63946;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-white {
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+  border: #000 solid 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+
+/* Icon Styles */
+.popup img {
+  width: 148px;
+  height: 148px;
+  margin-bottom: 10px;
 }

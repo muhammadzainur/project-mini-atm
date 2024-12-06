@@ -1,56 +1,51 @@
-/* Reset */
 * {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
 
-.container {
-    width: 460px;
-    color: white;
-    margin-right: 600px;
-}
-
-header {
+.header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
-    margin-bottom: 20px;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    padding: 0 50px 15px;
 }
 
 
 .bank-name {
-    position: absolute;
-    top: 20px;
-    left: 200px;
-    font-size: 1.2em;
+    font-size: 20px;
+    color: #000;
 }
 
 .date {
-    position: absolute;
-    top: 20px;
-    right: 200px;
-    /* Tempatkan di pojok kanan atas */
-    font-size: 1.2em;
+    font-size: 16px;
+    color: #DEDEDE8C;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    align-items: flex-start;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    text-align: left;
+    color: #000;
+    font-weight: 400;
 }
 
 .amount-input {
-    width: 100%;
+    width: 430px;
     padding: 10px;
     border-radius: 5px;
     border: none;
-    margin-bottom: 20px;
     font-size: 16px;
     outline: none;
     height: 60px;
@@ -61,7 +56,12 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-bottom: 20px;
-    width: 100%;
+}
+
+.minim {
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .amount-button {
@@ -70,19 +70,22 @@ header {
     color: black;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 30px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 500;
+    height: 80px;
 }
 
 .amount-button:hover {
-    background-color: #ccc;
+    background-color: #92ACEF;
+    color: white;
 }
 
 .action-buttons {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: 50px;
 }
 
 .action-button {

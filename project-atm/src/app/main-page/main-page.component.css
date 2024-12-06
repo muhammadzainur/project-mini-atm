@@ -4,32 +4,26 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  /* Use Poppins font */
 }
 
 .garis {
   border: none;
-  /* Menghilangkan border default */
   height: 1px;
-  /* Tinggi garis */
   background-color: white;
-  /* Warna garis */
   margin: 65px 0;
-  /* Margin atas dan bawah */
 }
 
 .main-page-container {
   position: relative;
   background-color: #2196f3;
-  /* Latar belakang biru */
   width: 100vw;
   height: 100vh;
   color: #ffffff;
   box-sizing: border-box;
   padding: 0;
-  /* Menghilangkan padding utama */
   overflow: hidden;
-  font-family: Roboto, sans-serif;
 }
 
 .header {
@@ -43,35 +37,29 @@ html {
   position: absolute;
   top: 20px;
   right: 200px;
-  /* Tempatkan di pojok kanan atas */
   font-size: 1.2em;
   opacity: 0.5;
 }
 
 .bank-name {
-  font-weight: bold;
+  font-weight: 400;
+  color: #000;
 }
 
 .content {
   display: flex;
   justify-content: center;
-  /* Center child elements horizontally */
   align-items: center;
-  /* Center child elements vertically */
   width: 100%;
   max-width: 800px;
-  /* Set a maximum width */
   margin: 50px auto 0;
-  /* Center the content with auto margins */
   padding: 0 20px;
-  /* Optional padding on the sides */
 }
 
 .illustration {
   flex: 2;
   display: flex;
   justify-content: center;
-  /* Center the image horizontally */
   align-items: center;
   margin-right: 20px;
 }
@@ -93,7 +81,7 @@ html {
   justify-content: space-between;
   align-items: center;
   text-align: left;
-  background-color: #ffffff;
+  background-color: #fff;
   color: black;
   border-radius: 10px;
   padding: 10px 20px;
@@ -104,15 +92,13 @@ html {
   width: 350px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   outline: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .action-icon {
   width: 40px;
-  /* Adjust the width of the icons */
   height: 40px;
-  /* Adjust the height of the icons */
   margin-right: 10px;
-  /* Add some space between icon and text */
 }
 
 .action-button:focus {
@@ -122,22 +108,6 @@ html {
 .action-button:hover {
   background-color: #88AAFF;
   color: #ffffff;
-}
-
-.action-button:hover {
-  content: url('/project-atm/public/eye-2.png');
-}
-
-.action-button:hover {
-  content: url('/project-atm/public/trans-2.png');
-}
-
-.action-button:hover {
-  content: url('/project-atm/public/money-2.png');
-}
-
-.action-button:hover {
-  content: url('/project-atm/public/tarik-2.png');
 }
 
 .popup-overlay {
@@ -156,8 +126,8 @@ html {
 .popup {
   background: white;
   border-radius: 12px;
-  width: 90%;
-  max-width: 400px;
+  width: 280px;
+  height: 360px;
   text-align: center;
   padding: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -166,13 +136,13 @@ html {
 .popup-message {
   font-size: 16px;
   color: #333;
-  margin-bottom: 24px;
+  margin-bottom: 56px;
 }
 
 .popup-actions {
   display: flex;
   gap: 10px;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .button {
@@ -196,4 +166,9 @@ html {
 
 .button:hover {
   opacity: 0.9;
+}
+
+img {
+  width: 148px;
+  height: 148px;
 }
